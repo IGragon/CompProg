@@ -1,4 +1,4 @@
-f = open("input_owYes2.txt", 'r')
+f = open("input_owYes.txt", 'r')
 data = f.readlines()
 f.close()
 
@@ -42,6 +42,6 @@ if isEulerianPath:
         del vert[next_pos][vert[next_pos].index(current_pos)]
         path.append(next_pos)
         current_pos = next_pos
-    print(path)
+    print('-'.join(map(str, path)))
 else:
     print("NO")
