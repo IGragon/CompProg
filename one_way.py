@@ -1,10 +1,10 @@
-f = open("input_ow.txt", 'r')
+f = open("input_owNo.txt", 'r')
 data = f.readlines()
 f.close()
 
 k = int(data.pop(0))
 n = int(data.pop(0))
-edges = [[0 for _ in range(k)] for _ in range(k) ]
+edges = [[0 for _ in range(k)] for _ in range(k)]
 nodes = [0 for i in range(k)]
 for _ in range(n):
     a, b = map(int, data.pop(0).split())
